@@ -1,0 +1,10 @@
+POST http://localhost:8080/predict
+Content-Type: application/json
+
+{
+  "umur": 32,
+  "jenis_kelamin": "laki-laki",
+  "tinggi_badan": 150
+}
+
+###
