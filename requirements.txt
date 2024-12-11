@@ -2,3 +2,5 @@ Flask
 numpy
 gunicorn
 scikit-learn
+tensorflow
+Pillow

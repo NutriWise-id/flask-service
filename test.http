@@ -1,4 +1,16 @@
-POST http://localhost:8080/predict
+POST http://localhost:8080/predict_food
+Content-Type: multipart/form-data; boundary=myBoundary123
+
+--myBoundary123
+Content-Disposition: form-data; name="image"; filename="nasigoreng"
+Content-Type: image/jpeg
+
+< ./test.jpeg
+--myBoundary123--
+
+
+###
+POST http://localhost:8080/predict_nutrition
 Content-Type: application/json
 
 {
@@ -8,3 +20,5 @@ Content-Type: application/json
 }
 
 ###
+
+
